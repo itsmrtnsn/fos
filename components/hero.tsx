@@ -22,13 +22,9 @@ export function Hero() {
           <p>Fòmasyon</p>
           <p>Transfòmasyon</p>
         </div>
-        <div className='font-medium text-base md:font-light text-center md:text-3xl dark:text-neutral-200 py-4 text-muted-foreground'>
-          Yon altenativ peyi , nan grandè anperè jean Jacques Dessalines
+        <div className='font-medium text-base md:font-light text-center md:text-xl dark:text-neutral-200 py-4 text-muted-foreground'>
+          Yon altenativ peyi, nan grandè anperè jean Jacques Dessalines
         </div>
-        {/* <button className='bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2'>
-          Debug now
-        </button> */}
-
         <RainbowButtonDemo />
       </motion.div>
     </AuroraBackground>

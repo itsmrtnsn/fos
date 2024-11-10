@@ -23,7 +23,7 @@ export default function RootLayout({
           GeistSans.className
         )}
       >
-        <ThemeProvider attribute='class' defaultTheme='system'>
+        <ThemeProvider attribute='class' defaultTheme='light'>
           <div>
             <NavBar />
           </div>
