@@ -1,9 +1,9 @@
-import { AuroraBackgroundDemo } from '@/components/hero';
+import { Hero } from '@/components/hero';
 
 const HomePage = () => {
   return (
     <div>
-      <AuroraBackgroundDemo />
+      <Hero />
     </div>
   );
 };
