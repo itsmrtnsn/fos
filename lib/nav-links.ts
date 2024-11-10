@@ -1,6 +1,7 @@
 import {
-  BookOpenCheck,
+  BookOpenText,
   Contact,
+  FileUser,
   GraduationCap,
   Home,
   Newspaper,
@@ -12,7 +13,7 @@ const navLinks = [
     id: 2,
     name: 'Enfòmasyon',
     slug: 'information',
-    icon: BookOpenCheck,
+    icon: BookOpenText,
     path: '/enfomasyon',
   },
   {
@@ -27,11 +28,11 @@ const navLinks = [
     id: 5,
     name: 'Konsènan',
     slug: 'about-us',
-    icon: Contact,
+    icon: FileUser,
     path: '/kontak',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Kontakte nou',
     slug: 'contact-us',
     icon: Contact,

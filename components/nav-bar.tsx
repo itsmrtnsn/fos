@@ -44,13 +44,13 @@ const NavBar = () => {
           <div className='hidden md:flex space-x-4'>
             <Button
               variant='outline'
-              size='sm'
+              // size='sm'
               className='border-primary border-[0.1px] text-primary hover:bg-white hover:text-red-700'
             >
               <LogIn className='h-4 w-4' /> Konekte
             </Button>
             <Button
-              size='sm'
+              // size='sm'
               className='bg-primary hover:bg-red-700  transition-colors duration-300 ease-linear text-white'
             >
               <UserPlus2 className='h-4 w-4' /> Enskri
@@ -106,17 +106,17 @@ const NavBar = () => {
                 </Link>
               ))}
 
-              <div className='mt-4 w-full'>
+              <div className='mt-4 w-full flex items-center gap-4'>
                 <Button
                   variant='outline'
-                  size='sm'
-                  className='mt-4 w-full border-[0.1px] border-primary text-primary'
+                  size='lg'
+                  className=' w-full border-[0.1px] border-primary text-primary'
                 >
                   <LogIn className='h-4 w-4' /> Konekte
                 </Button>
                 <Button
-                  size='sm'
-                  className='mt-2 w-full bg-primary hover:bg-red-700 transition-colors ease-linear duration-300 text-white'
+                  size='lg'
+                  className=' w-full bg-primary hover:bg-red-700 transition-colors ease-linear duration-300 text-white'
                 >
                   <UserPlus2 className='h-4 w-4' /> Enskri
                 </Button>
