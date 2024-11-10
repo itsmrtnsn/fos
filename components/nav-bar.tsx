@@ -45,7 +45,7 @@ const NavBar = () => {
             <Button
               variant='outline'
               // size='sm'
-              className='border-primary border-[0.1px] text-primary hover:bg-white hover:text-red-700'
+              className='border-primary  text-primary hover:bg-white hover:text-red-700'
             >
               <LogIn className='h-4 w-4' /> Konekte
             </Button>
@@ -110,7 +110,7 @@ const NavBar = () => {
                 <Button
                   variant='outline'
                   size='lg'
-                  className=' w-full border-[0.1px] border-primary text-primary'
+                  className=' w-full  border-primary text-primary'
                 >
                   <LogIn className='h-4 w-4' /> Konekte
                 </Button>
