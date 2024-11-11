@@ -3,8 +3,10 @@ import { Hero } from '@/components/hero';
 import LatestArticlesWithCTA from '@/components/latest-articles';
 import OurMission from '@/components/our-mission';
 import { WelcomeNotice } from '@/components/welcome-notice';
+import getArticles from '@/lib/get-articles';
 
-const HomePage = () => {
+const HomePage = async () => {
+  const blogPoss = await getArticles();
   return (
     <div className='mb-10 relative'>
       <Hero />
@@ -12,11 +14,10 @@ const HomePage = () => {
         <WelcomeNotice />
       </div>
       <OurMission />
-      <LatestArticlesWithCTA />
+      <LatestArticlesWithCTA posts={blogPoss} />
       <CallToAction />
     </div>
   );
 };
 
 export default HomePage;
-``;
