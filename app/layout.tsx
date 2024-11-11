@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import NavBar from '@/components/nav-bar';
 import Footer from '@/components/footer';
+import { ClerkProvider } from '@clerk/nextjs';
 
 export const metadata: Metadata = {
   title: 'FÒS | Home',
@@ -17,21 +18,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ht' suppressHydrationWarning>
-      <body
-        className={cn(
-          'antialiased min-h-screen bg-background',
-          GeistSans.className
-        )}
-      >
-        <ThemeProvider attribute='class' defaultTheme='light'>
-          <div>
-            <NavBar />
-          </div>
-          <main className='pt-16 lg:pt-16'> {children}</main>
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang='ht' suppressHydrationWarning>
+        <body
+          className={cn(
+            'antialiased min-h-screen bg-background',
+            GeistSans.className
+          )}
+        >
+          <ThemeProvider attribute='class' defaultTheme='light'>
+            <div>
+              <NavBar />
+            </div>
+            <main className='pt-16 lg:pt-16'> {children}</main>
+            <Footer />
+          </ThemeProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div className='mb-10 relative'>
       <Hero />
-      <div className='absolute -top-20 left-1/2 transform -translate-x-1/2'>
+      <div className='absolute -top-16 lg:-top-20 left-1/2 transform -translate-x-1/2'>
         <WelcomeNotice />
       </div>
       <OurMission />

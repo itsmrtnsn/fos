@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Button } from './ui/button';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,6 +49,9 @@ const NavBar = () => {
             >
               <LogIn className='h-4 w-4' /> Konekte
             </Button>
+            {/* <SignedOut>
+              <SignInButton />
+            </SignedOut> */}
             <Button className='bg-primary hover:bg-red-700  transition-colors duration-300 ease-linear text-white'>
               <UserPlus2 className='h-4 w-4' /> Enskri
             </Button>
@@ -102,6 +106,15 @@ const NavBar = () => {
                   <span> {link.name}</span>
                 </Link>
               ))}
+
+              {/* <div className=''>
+                <SignedOut>
+                  <SignInButton />
+                </SignedOut>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
+              </div> */}
 
               <div className='mt-4 w-full flex items-center gap-4'>
                 <Button
