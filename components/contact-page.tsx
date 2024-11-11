@@ -9,13 +9,13 @@ import { MapPin, Phone } from 'lucide-react';
 export function ContactPageComponent() {
   return (
     <div className='min-h-screen flex items-center justify-center lg:max-w-6xl  mx-auto'>
-      <div className='container mx-auto px-4 py-16'>
-        <h1 className='text-5xl md:text-7xl font-extrabold text-center mb-8'>
+      <div className='container mx-auto px-0 lg:px-4 py-16'>
+        <h1 className='text-5xl md:text-7xl font-extrabold text-center mb-4'>
           <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800'>
             Kontakte nou
           </span>
         </h1>
-        <p className='text-base text-gray-600 text-center mb-16 max-w-2xl mx-auto'>
+        <p className='text-base text-muted-foreground text-center mb-16 max-w-2xl mx-auto'>
           Nou la pou nou tande w epi ede w avèk nenpòt kesyon ou genyen. Pa
           ezite kontakte nou.
         </p>

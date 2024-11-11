@@ -1,4 +1,7 @@
+'use client';
+
 import navLinks from '@/lib/nav-links';
+import { cn } from '@/lib/utils';
 import {
   Facebook,
   Instagram,
@@ -7,8 +10,12 @@ import {
   MapPinHouse,
   Twitter,
 } from 'lucide-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
+  const currentPath = usePathname();
+  console.log(currentPath);
   return (
     <footer className='bg-gray-100 text-gray-600 py-12'>
       <div className='container mx-auto px-4 '>
@@ -25,9 +32,19 @@ export default function Footer() {
             <h3 className='text-lg font-semibold text-black'>Lyen rapid</h3>
             <ul className='space-y-2'>
               {navLinks.map((link) => (
-                <li key={link.id} className='flex items-center gap-2'>
-                  <link.icon className='h-4 w-4' />
-                  <span className='text-sm'>{link.name}</span>
+                <li key={link.id}>
+                  <Link
+                    href={link.path}
+                    className={cn(
+                      'flex items-center gap-2',
+                      currentPath === link.path
+                        ? 'text-red-600 font-semibold'
+                        : 'text-gray-600'
+                    )}
+                  >
+                    <link.icon className='h-4 w-4' />
+                    <span className='text-sm'>{link.name}</span>
+                  </Link>
                 </li>
               ))}
             </ul>

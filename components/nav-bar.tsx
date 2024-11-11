@@ -44,15 +44,11 @@ const NavBar = () => {
           <div className='hidden md:flex space-x-4'>
             <Button
               variant='outline'
-              // size='sm'
               className='border-primary  text-primary hover:bg-white hover:text-red-700'
             >
               <LogIn className='h-4 w-4' /> Konekte
             </Button>
-            <Button
-              // size='sm'
-              className='bg-primary hover:bg-red-700  transition-colors duration-300 ease-linear text-white'
-            >
+            <Button className='bg-primary hover:bg-red-700  transition-colors duration-300 ease-linear text-white'>
               <UserPlus2 className='h-4 w-4' /> Enskri
             </Button>
           </div>
@@ -92,6 +88,7 @@ const NavBar = () => {
             <nav className='flex flex-col p-4'>
               {navLinks.map((link) => (
                 <Link
+                  onClick={() => setIsMenuOpen(false)}
                   className={cn(
                     'py-2 text-sm text-black hover:text-red-600 transition-colors duration-300 ease-linear flex items-center gap-x-4',
                     {

@@ -1,56 +1,28 @@
-'use client';
-
 import { Card, CardContent } from '@/components/ui/card';
-import { motion } from 'framer-motion';
 import { CheckCircle, Eye, Info, Users } from 'lucide-react';
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
-const staggerChildren = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 export default function AboutPage() {
   return (
-    <div className='min-h-screen '>
-      <motion.div
-        className='container mx-auto px-4 py-16'
-        initial='initial'
-        animate='animate'
-        variants={staggerChildren}
-      >
-        <motion.h1
-          className='text-5xl md:text-7xl font-extrabold text-center mb-8'
-          variants={fadeInUp}
-        >
+    <div className='min-h-screen lg:mx-10'>
+      <div className='container mx-auto px-4 py-16'>
+        <h1 className='text-5xl md:text-7xl font-extrabold text-center mb-4'>
           <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800'>
             Konsènan nou
           </span>
-        </motion.h1>
-        <motion.p
-          className='text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto'
-          variants={fadeInUp}
-        >
+        </h1>
+        <p className='text-base text-muted-foreground text-center mb-16 max-w-2xl mx-auto'>
           Dekouvri istwa nou ak misyon nou pou Ayiti. Ansanm, n ap bati yon avni
           pi klere.
-        </motion.p>
+        </p>
 
-        <motion.div variants={fadeInUp}>
+        <div>
           <Card className='p-4 shadow-none transition-shadow duration-300  mb-16'>
             <CardContent className='space-y-6 p-2'>
               <div className='flex items-center space-x-4 mb-6'>
                 <Info className='w-12 h-12 text-primary' />
                 <h2 className='text-3xl font-bold'>Konsènan FÒS</h2>
               </div>
-              <p className='text-lg leading-relaxed'>
+              <p className='text-base leading-relaxed'>
                 Federasyon òganizasyon sosyalis (FÒS) se yon Federasyon ki
                 regwoupe tout òganizasyon ak endividi ki nan kouran politik
                 lagoch epi ki wè tèt yo nan yon sistèm ekonomik sosyalis.
@@ -58,26 +30,23 @@ export default function AboutPage() {
                 PIERRE (Tichapo) epi Samuel JULES (Samy). Li genyen syèj sosyal
                 li, nan ri Séjourné Dèlma 19.
               </p>
-              <p className='text-lg leading-relaxed'>
+              <p className='text-sm leading-relaxed'>
                 Federasyon sila chita sou twa(3) pilye : Enfòmasyon, Fòmasyon ak
                 Transfòmasyon. Nan lide pou l pèmèt tout ayisyen-èn gen bon
                 konpreyansyon sou pase ak prezan pou yo kapab konsyan epi deside
                 pou lavni yo atravè tout sa yo gen pou yo aprann pou yo kapab
                 vini bonjan sitwayen ayisyen ki transfòme.
               </p>
-              <p className='text-lg leading-relaxed font-semibold'>
+              <p className='text-sm leading-relaxed font-semibold'>
                 FÒS gen pou vizyon, fè yon travay konsyans nan objektif pou nou
                 rive etabli leta DESSALINES te reve a.
               </p>
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className='grid md:grid-cols-2 gap-12 mb-16'
-          variants={staggerChildren}
-        >
-          <motion.div variants={fadeInUp}>
+        <div className='grid md:grid-cols-2 gap-12 mb-16'>
+          <div>
             <Card className='p-4 shadow-none transition-shadow duration-300 '>
               <CardContent className='space-y-4 p-2'>
                 <Users className='w-12 h-12 mb-4 text-primary' />
@@ -90,9 +59,9 @@ export default function AboutPage() {
                 </p>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
 
-          <motion.div variants={fadeInUp}>
+          <div>
             <Card className='p-4 shadow-none transition-shadow duration-300 '>
               <CardContent className='space-y-4 p-2'>
                 <Eye className='w-12 h-12 mb-4 text-primary' />
@@ -104,19 +73,13 @@ export default function AboutPage() {
                 </p>
               </CardContent>
             </Card>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
-        <motion.h2
-          className='text-4xl font-bold text-center mb-12 text-red-700'
-          variants={fadeInUp}
-        >
+        <h2 className='text-4xl font-bold text-center mb-12 text-red-700'>
           Valè nou yo
-        </motion.h2>
-        <motion.div
-          className='grid md:grid-cols-3 gap-8 mb-16'
-          variants={staggerChildren}
-        >
+        </h2>
+        <div className='grid md:grid-cols-3 gap-8 mb-16'>
           {[
             {
               title: 'Solidarite',
@@ -134,7 +97,7 @@ export default function AboutPage() {
                 'Nou kwè nan enpòtans onètete ak responsablite nan tout aksyon nou yo.',
             },
           ].map((value, index) => (
-            <motion.div key={index} variants={fadeInUp}>
+            <div key={index}>
               <Card className='p-4 shadow-none transition-shadow duration-300'>
                 <CardContent className='space-y-4 p-2'>
                   <div className='flex items-center space-x-2'>
@@ -146,10 +109,10 @@ export default function AboutPage() {
                   <p className='text-gray-600'>{value.description}</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   );
 }
