@@ -17,7 +17,7 @@ export function Hero() {
         }}
         className='relative  overflow-hidden flex flex-col gap-4 items-center justify-center px-4'
       >
-        <div className=' text-[2.6rem] -space-y-2 md:space-y-3 font-black text-primary md:text-8xl md:font-black dark:text-white text-center'>
+        <div className=' text-[2.6rem] -space-y-2 md:space-y-3 font-black text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800 md:text-8xl md:font-black dark:text-white text-center'>
           <p>Federasyon</p>
           <p>Òganizasyon</p>
           <p>Sosyalis</p>

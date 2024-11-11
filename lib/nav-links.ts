@@ -27,9 +27,9 @@ const navLinks = [
   {
     id: 5,
     name: 'Konsènan',
-    slug: 'about-us',
+    slug: 'konsenan',
     icon: FileUser,
-    path: '/kontak',
+    path: '/konsenan',
   },
   {
     id: 6,
