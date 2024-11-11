@@ -15,7 +15,7 @@ import { usePathname } from 'next/navigation';
 
 export default function Footer() {
   const currentPath = usePathname();
-  console.log(currentPath);
+
   return (
     <footer className='bg-gray-100 text-gray-600 py-12'>
       <div className='container mx-auto px-4 '>
