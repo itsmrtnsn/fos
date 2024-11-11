@@ -23,7 +23,7 @@ const navLinks = [
     icon: GraduationCap,
     path: '/pwogram-yo',
   },
-  { id: 4, name: 'Blog', slug: 'blog', icon: Newspaper, path: '/blog' },
+  { id: 4, name: 'Blòg', slug: 'blog', icon: Newspaper, path: '/blog' },
   {
     id: 5,
     name: 'Konsènan',
