@@ -11,7 +11,7 @@ import { Clock, Users, Star } from 'lucide-react';
 
 export function CourseCardSkeleton() {
   return (
-    <Card className='flex flex-col h-full overflow-hidden border-[0.1px] shadow-none'>
+    <Card className='flex flex-col h-full overflow-hidden shadow-none'>
       <Skeleton className='h-48 w-full bg-slate-100' />
       <CardHeader>
         <Skeleton className='h-8 w-3/4 mb-2 bg-slate-100' />
