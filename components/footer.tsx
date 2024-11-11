@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { FaLaptopCode } from 'react-icons/fa';
 
 export default function Footer() {
   const currentPath = usePathname();
@@ -99,10 +100,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='mt-8 pt-8 border-t border-gray-200 text-center'>
+        <div className='mt-8 pt-8 border-t border-gray-200 text-center text-sm'>
           <p className='text-sm'>
             &copy; {new Date().getFullYear()} Federasyon Òganizasyon Sosyalis
             (FÒS) - Tout dwa rezève
+          </p>
+          <p className='text-sm flex items-center text-center justify-center mt-2 gap-2'>
+            Kreye pa
+            <FaLaptopCode className='w-5 h-5 text-red-600' />
+            <span className='text-red-600 text-xs font-medium'>
+              devsettings2001@gmail.com
+            </span>
           </p>
         </div>
       </div>
