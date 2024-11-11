@@ -1,5 +1,12 @@
-import { Facebook, Twitter, Instagram, Linkedin, Mail } from 'lucide-react';
-import Link from 'next/link';
+import navLinks from '@/lib/nav-links';
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPinHouse,
+  Twitter,
+} from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,57 +14,30 @@ export default function Footer() {
       <div className='container mx-auto px-4 '>
         <div className='flex flex-col gap-8  lg:flex-row lg:justify-around'>
           <div className='space-y-4 w-[20rem]'>
-            <h3 className='text-lg font-semibold text-black'>About Us</h3>
+            <h3 className='text-lg font-semibold text-black'>Konsènan</h3>
             <p className='text-sm'>
-              We are passionate about delivering high-quality content and
-              insights to our readers, helping them stay informed and inspired.
+              Federasyon òganizasyon sosyalis (FÒS) se yon Federasyon ki
+              regwoupe tout òganizasyon ak endividi ki nan kouran politik lagoch
+              epi ki wè tèt yo nan yon sistèm ekonomik sosyalis.
             </p>
           </div>
           <div className='space-y-4'>
-            <h3 className='text-lg font-semibold text-black'>Quick Links</h3>
+            <h3 className='text-lg font-semibold text-black'>Lyen rapid</h3>
             <ul className='space-y-2'>
-              <li>
-                <Link
-                  href='/'
-                  className='text-sm hover:text-red-600 transition-colors'
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/articles'
-                  className='text-sm hover:text-red-600 transition-colors'
-                >
-                  Articles
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/about'
-                  className='text-sm hover:text-red-600 transition-colors'
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/contact'
-                  className='text-sm hover:text-red-600 transition-colors'
-                >
-                  Contact
-                </Link>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.id} className='flex items-center gap-2'>
+                  <link.icon className='h-4 w-4' />
+                  <span className='text-sm'>{link.name}</span>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div className='space-y-4'>
-            <h3 className='text-lg font-semibold text-black'>
-              Connect With Us
-            </h3>
+            <h3 className='text-lg font-semibold text-black'>Konekte Ak Nou</h3>
             <div className='flex space-x-4'>
               <a
-                href='#'
+                href=''
                 aria-label='Facebook'
                 className='text-gray-400 hover:text-red-600 transition-colors'
               >
@@ -91,15 +71,21 @@ export default function Footer() {
                 href='mailto:info@example.com'
                 className='text-sm hover:text-red-600 transition-colors'
               >
-                info@example.com
+                federasyonoganizasyonsosyalis@gmail.com
               </a>
+            </div>
+            <div className='flex items-center gap-2'>
+              <MapPinHouse className='w-5 h-5 text-primary' />
+              <p className='text-sm  hover:text-primary transition-colors ease-linear duration-300'>
+                ri séjourné Dèlmas 19
+              </p>
             </div>
           </div>
         </div>
         <div className='mt-8 pt-8 border-t border-gray-200 text-center'>
           <p className='text-sm'>
-            &copy; {new Date().getFullYear()} Your Company Name. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Federasyon Òganizasyon Sosyalis
+            (FÒS) - Tout dwa rezève
           </p>
         </div>
       </div>

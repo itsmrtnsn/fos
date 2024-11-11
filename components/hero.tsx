@@ -18,9 +18,9 @@ export function Hero() {
         className='relative  overflow-hidden flex flex-col gap-4 items-center justify-center px-4'
       >
         <div className=' text-[2.6rem] -space-y-2 md:space-y-3 font-black text-primary md:text-8xl md:font-black dark:text-white text-center'>
-          <p>Enfòmasyon</p>
-          <p>Fòmasyon</p>
-          <p>Transfòmasyon</p>
+          <p>Federasyon</p>
+          <p>Òganizasyon</p>
+          <p>Sosyalis</p>
         </div>
         <div className='font-medium text-base md:font-light text-center md:text-xl dark:text-neutral-200 py-4 text-muted-foreground'>
           Yon altenativ peyi, nan grandè anperè jean Jacques Dessalines

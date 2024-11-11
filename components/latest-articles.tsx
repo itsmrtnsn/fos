@@ -19,22 +19,22 @@ interface Article {
 const articles: Article[] = [
   {
     id: 1,
-    title: 'The Future of Web Development',
-    excerpt: 'Exploring the latest trends and technologies shaping the web.',
-    category: 'Technology',
+    title: 'Lavni nan Devlopman Entènèt',
+    excerpt: 'Eksplore dènye tandans ak teknoloji ki fòme entènèt la.',
+    category: 'Teknoloji',
     image: image_2,
   },
   {
     id: 2,
-    title: 'Mastering React Hooks',
-    excerpt: "A deep dive into React's powerful hook system.",
-    category: 'Programming',
+    title: 'Metriz React Hooks',
+    excerpt: 'Yon gwo plonje nan pwisan sistèm zen React la.',
+    category: 'Pwogramasyon',
     image: image_3,
   },
   {
     id: 3,
-    title: 'Designing for Accessibility',
-    excerpt: 'Best practices for creating inclusive web experiences.',
+    title: 'Designing pou Aksè',
+    excerpt: 'Pi bon pratik pou kreye eksperyans web enklizif.',
     category: 'Design',
     image: image_4,
   },
@@ -68,17 +68,17 @@ export default function LatestArticlesWithCTA() {
                 />
               </div>
               <div className='p-6 '>
-                {/* <span className='text-sm font-semibold text-red-600 mb-2 inline-block'>
+                <span className='text-sm font-semibold text-primary mb-2 inline-block'>
                   {article.category}
-                </span> */}
+                </span>
                 <h3 className='text-xl font-bold mb-2'>{article.title}</h3>
                 <p className='text-gray-600 mb-4'>{article.excerpt}</p>
                 <motion.div
                   initial={false}
                   animate={{ x: hoveredId === article.id ? 5 : 0 }}
-                  className='flex items-center text-red-600 font-semibold'
+                  className='flex items-center text-primary font-semibold'
                 >
-                  Read More
+                  Li plis
                   <ArrowRight className='ml-2 h-4 w-4' />
                 </motion.div>
               </div>
