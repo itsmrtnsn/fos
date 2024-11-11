@@ -45,7 +45,7 @@ export default function LatestArticlesWithCTA() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <section className='py-24 bg-white'>
+    <section className='py-24 bg-white lg:px-10'>
       <div className='container mx-auto px-4'>
         <h2 className='text-3xl font-bold mb-8 text-center'>Dènye Atik</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12'>
@@ -58,7 +58,7 @@ export default function LatestArticlesWithCTA() {
               whileHover={{ scale: 1.03 }}
               onHoverStart={() => setHoveredId(article.id)}
               onHoverEnd={() => setHoveredId(null)}
-              className='bg-gray-100 border  rounded-lg overflow-hidden hover:scale-105  transition-all duration-300'
+              className='bg-slate-100 shadow-sm   rounded-lg overflow-hidden hover:scale-105  transition-all duration-300'
             >
               <div className='h-[16rem] p-2 '>
                 <Image

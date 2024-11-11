@@ -4,6 +4,7 @@ import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
 import './globals.css';
 import NavBar from '@/components/nav-bar';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'FÒS | Home',
@@ -28,6 +29,7 @@ export default function RootLayout({
             <NavBar />
           </div>
           <main className='pt-16 lg:pt-16'> {children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

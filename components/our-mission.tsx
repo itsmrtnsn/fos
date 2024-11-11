@@ -28,7 +28,7 @@ export default function OurMission() {
   ];
 
   return (
-    <section className='py-24 lg:py-28 bg-gray-100'>
+    <section className='py-24 lg:px-10 lg:py-28 bg-gray-100'>
       <div className='container mx-auto px-4'>
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -47,7 +47,7 @@ export default function OurMission() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div
-                className={`bg-gradient-to-br rounded-xl p-8  hover:scale-105 transition-all duration-300 h-full flex flex-col justify-between group bg-white  shadow-none text-primary border`}
+                className={`bg-gradient-to-br rounded-xl p-8  hover:scale-105 transition-all duration-300 h-full flex flex-col justify-between group bg-white  shadow-none text-primary border-[0.1px]`}
               >
                 <div>
                   <motion.div

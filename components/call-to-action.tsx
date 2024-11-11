@@ -1,9 +1,11 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 
 function CallToAction() {
   return (
-    <div className='bg-red-600 text-white rounded-lg p-8 shadow-lg'>
+    <div className='bg-red-600 text-white rounded-lg p-10 shadow-lg mx-5 lg:mx-10'>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
