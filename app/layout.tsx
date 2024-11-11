@@ -1,18 +1,18 @@
+import Footer from '@/components/footer';
+import NavBar from '@/components/nav-bar';
 import { ThemeProvider } from '@/components/theme-provider';
 import { cn } from '@/lib/utils';
+import { ClerkProvider } from '@clerk/nextjs';
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
 import './globals.css';
-import NavBar from '@/components/nav-bar';
-import Footer from '@/components/footer';
-import { ClerkProvider } from '@clerk/nextjs';
 
 export const metadata: Metadata = {
   title: 'FÒS | Home',
   description: 'Federasyon Òganizasyon Sosyalis',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

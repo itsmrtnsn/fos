@@ -43,15 +43,21 @@ const NavBar = () => {
           </nav>
 
           <div className='hidden md:flex space-x-4'>
+            {/* <div className=''>
+              <SignedOut>
+                <SignInButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </div> */}
             <Button
               variant='outline'
               className='border-primary  text-primary hover:bg-white hover:text-red-700'
             >
               <LogIn className='h-4 w-4' /> Konekte
             </Button>
-            {/* <SignedOut>
-              <SignInButton />
-            </SignedOut> */}
+
             <Button className='bg-primary hover:bg-red-700  transition-colors duration-300 ease-linear text-white'>
               <UserPlus2 className='h-4 w-4' /> Enskri
             </Button>
