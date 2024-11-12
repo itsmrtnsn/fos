@@ -39,7 +39,11 @@ export function BlogCard({ post }: Props) {
         <p className='text-muted-foreground line-clamp-4'>{post.content}</p>
       </CardContent>
       <CardFooter>
-        <Button asChild>
+        <Button
+          asChild
+          variant='outline'
+          className='shadow-none border-primary/40 text-primary font-normal hover:bg-transparent hover:text-primary/50 transition-colors ease-linear duration-300'
+        >
           <Link href={`/blog/${post.id}`}>Li plis</Link>
         </Button>
       </CardFooter>

@@ -84,7 +84,7 @@ export default function Footer() {
               </a>
             </div>
             <div className='flex items-center space-x-2'>
-              <Mail className='h-5 w-5 text-red-600' />
+              <Mail className='h-4 w-4 text-red-600' />
               <a
                 href='mailto:info@example.com'
                 className='text-sm hover:text-red-600 transition-colors'
@@ -92,17 +92,18 @@ export default function Footer() {
                 federasyonoganizasyonsosyalis@gmail.com
               </a>
             </div>
-            <div className='flex items-center gap-2'>
-              <MapPinHouse className='w-5 h-5 text-primary' />
+            <div className='flex items-center space-x-2'>
+              <MapPinHouse className='w-4 h-4 text-primary' />
               <p className='text-sm  hover:text-primary transition-colors ease-linear duration-300'>
                 ri séjourné Dèlmas 19
               </p>
             </div>
           </div>
         </div>
-        <div className='mt-8 pt-8 border-t border-gray-200 text-center text-sm'>
-          <p className='text-sm'>
+        <div className='mt-8 py-8  border-gray-200 text-center text-sm bg-white border-[0.1px] rounded-xl'>
+          <p className='text-xs'>
             &copy; {new Date().getFullYear()} Federasyon Òganizasyon Sosyalis
+            <br />
             (FÒS) - Tout dwa rezève
           </p>
           <p className='text-sm flex items-center text-center justify-center mt-2 gap-2'>

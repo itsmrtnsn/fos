@@ -23,7 +23,7 @@ export default function LatestArticlesWithCTA({ posts }: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.03 }}
-              className='bg-slate-100 shadow-sm   rounded-lg overflow-hidden hover:scale-105  transition-all duration-300'
+              className='bg-slate-100 shadow-none    rounded-lg overflow-hidden hover:scale-105  transition-all  ease-linear duration-300'
             >
               <div className='h-[14rem] p-2 '>
                 <Image

@@ -11,7 +11,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Button } from './ui/button';
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +19,7 @@ const NavBar = () => {
 
   return (
     <div className=''>
-      <header className='px-4 lg:px-6 h-16 flex items-center fixed w-full backdrop-blur bg-white/50 z-50 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]'>
+      <header className='px-4 lg:px-6 h-16 flex items-center fixed w-full backdrop-blur bg-white/50 z-50 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] dark:bg-black'>
         <div className='container mx-auto flex justify-between items-center'>
           <Link className='flex items-center justify-center mt-2' href='/'>
             <Image src={logo_red} alt='logo' width={90} height={90} />
@@ -30,7 +29,7 @@ const NavBar = () => {
               <Link
                 key={link.id}
                 className={cn(
-                  'text-sm font-normal text-black hover:text-primary transition-colors duration-300 ease-linear',
+                  'text-sm font-normal text-black dark:text-white  hover:text-primary hover:dark:text-primary     transition-colors duration-300 ease-linear',
                   {
                     'text-primary font-medium': currentPath === link.path,
                   }
@@ -53,7 +52,7 @@ const NavBar = () => {
             </div> */}
             <Button
               variant='outline'
-              className='border-primary  text-primary hover:bg-white hover:text-red-700'
+              className='border-primary dark:hover:bg-black dark:text-white   text-primary hover:bg-white hover:text-red-700'
             >
               <LogIn className='h-4 w-4' /> Konekte
             </Button>
@@ -93,14 +92,14 @@ const NavBar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className='fixed inset-x-0 top-16 bg-white shadow-lg z-40 md:hidden'
+            className='fixed inset-x-0 top-16 bg-white dark:bg-black  shadow-lg z-40 md:hidden'
           >
             <nav className='flex flex-col p-4'>
               {navLinks.map((link) => (
                 <Link
                   onClick={() => setIsMenuOpen(false)}
                   className={cn(
-                    'py-2 text-sm text-black hover:text-red-600 transition-colors duration-300 ease-linear flex items-center gap-x-4',
+                    'py-2 text-sm text-black hover:text-primary dark:text-white transition-colors duration-300 ease-linear flex items-center gap-x-4',
                     {
                       'text-primary font-medium': currentPath === link.path,
                     }
@@ -126,13 +125,13 @@ const NavBar = () => {
                 <Button
                   variant='outline'
                   size='lg'
-                  className=' w-full  border-primary text-primary'
+                  className=' w-full  border-primary text-white hover:bg-black'
                 >
                   <LogIn className='h-4 w-4' /> Konekte
                 </Button>
                 <Button
                   size='lg'
-                  className=' w-full bg-primary hover:bg-red-700 transition-colors ease-linear duration-300 text-white'
+                  className=' w-full bg-primary hover:bg-primary transition-colors ease-linear duration-300 text-white'
                 >
                   <UserPlus2 className='h-4 w-4' /> Enskri
                 </Button>
