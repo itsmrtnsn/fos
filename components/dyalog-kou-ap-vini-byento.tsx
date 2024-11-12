@@ -13,7 +13,7 @@ import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { BookOpen, Mail } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ComingSoonModal() {
   const [imel, setImel] = useState('');
@@ -25,6 +25,17 @@ export default function ComingSoonModal() {
     console.log('Imel ki soumèt:', imel);
     setSoumetFini(true);
   };
+
+  useEffect(() => {
+    if (!ouveDialog) {
+      const timeoutId = setTimeout(() => {
+        setOuveDialog(true);
+      }, 5000);
+
+      // Clear timeout if the component unmounts to prevent memory leaks
+      return () => clearTimeout(timeoutId);
+    }
+  }, [ouveDialog]);
 
   return (
     <Dialog open={ouveDialog} onOpenChange={setOuveDialog}>
