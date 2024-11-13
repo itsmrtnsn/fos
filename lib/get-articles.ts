@@ -23,7 +23,7 @@ const blogs: BlogPost[] = [
   {
     id: 'HEWJHEYAEKJRFHWNE',
     title: 'Nòt Denonsiyasyon ak Kondanasyon',
-    category: 'Politik ak Sosyal',
+    category: 'Politik ak Diplomasi',
     date: 'Pòtoprens, 29 oktòb 2024',
     content: `Federasyon Òganizasyon Sosyalis (FÒS) vle atire atansyon popilasyon ayisyèn nan ak tout peyi ki kwè nan libètè ak otodetèminasyon sou yon malè k ap toufe Ayiti.
 Lè nou konsidere "ONU" kreye nan objektif pou lapè ak sekirite kapab taye banda nan tout mond lan, pou jounen jodi a peyi Etazini ki gen dwaveto epi ki fè pati de konsèy sekirite a, ki ta dwe yon ekzanp, tounen yon gwo founisè zam ak minisyon pou fè san koule sou tè libète papa Dessalines nan.
@@ -41,7 +41,7 @@ Federasyon Òganizasyon Sosyalis (FÒS) nou kwè nan lapè ak sekirite, nou kwè
   },
   {
     id: 'JDSKFNEUIWHFUHWEINWCEWH',
-    category: 'Politik ak Sosyal',
+    category: 'Politik ak Diplomasi',
     title: 'Kominke pou Laprès',
     date: 'Port-au-Prince,  10 oktòb 2024',
     content: `Federasyon Òganizasyon Sosyalis (FÒS), konstate avèk anpil lapenn tray ayisyen-èn ap pase nan lòtbò zile Ayiti a (Repiblik Dominikèn) anba nawè tout Eta manm nasyonzini. 

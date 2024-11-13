@@ -23,7 +23,7 @@ export function Hero() {
           <p>Sosyalis</p>
         </div>
         <div className='font-medium text-base md:font-light text-center md:text-xl dark:text-neutral-200 py-4 text-muted-foreground'>
-          Yon altenativ peyi, nan grandè anperè jean Jacques Dessalines
+          Yon altenativ peyi, nan grandè anperè Jean Jacques Dessalines.
         </div>
         <RainbowButtonDemo />
       </motion.div>

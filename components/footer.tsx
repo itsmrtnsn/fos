@@ -14,6 +14,33 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FaLaptopCode } from 'react-icons/fa';
 
+const socialLinks = [
+  {
+    id: 1,
+    name: 'Facebook',
+    icon: Facebook,
+    href: 'https://www.facebook.com/share/1Q6mY5p7z3/',
+  },
+  {
+    id: 2,
+    name: 'Twitter',
+    icon: Twitter,
+    href: 'https://x.com/fosAyiti509?t=rjDV9nUwmbWyS8RK7O7lUQ&s=08',
+  },
+  {
+    id: 3,
+    name: 'Instagram',
+    icon: Instagram,
+    href: 'https://www.instagram.com/federasyonoganizasyonsosyalis',
+  },
+  {
+    id: 4,
+    name: 'LinkedIn',
+    icon: Linkedin,
+    href: 'https://www.linkedin.com/share/1Q6mY5p7z3/',
+  },
+];
+
 export default function Footer() {
   const currentPath = usePathname();
 
@@ -52,36 +79,13 @@ export default function Footer() {
           </div>
 
           <div className='space-y-4'>
-            <h3 className='text-lg font-semibold text-black'>Konekte Ak Nou</h3>
+            <h3 className='text-lg font-semibold text-black'>Konekte ak nou</h3>
             <div className='flex space-x-4'>
-              <a
-                href=''
-                aria-label='Facebook'
-                className='text-gray-400 hover:text-red-600 transition-colors'
-              >
-                <Facebook className='h-6 w-6' />
-              </a>
-              <a
-                href='#'
-                aria-label='Twitter'
-                className='text-gray-400 hover:text-red-600 transition-colors'
-              >
-                <Twitter className='h-6 w-6' />
-              </a>
-              <a
-                href='#'
-                aria-label='Instagram'
-                className='text-gray-400 hover:text-red-600 transition-colors'
-              >
-                <Instagram className='h-6 w-6' />
-              </a>
-              <a
-                href='#'
-                aria-label='LinkedIn'
-                className='text-gray-400 hover:text-red-600 transition-colors'
-              >
-                <Linkedin className='h-6 w-6' />
-              </a>
+              {socialLinks.map((link) => (
+                <Link href={link.href} key={link.id}>
+                  <link.icon className='h-6 w-6 text-gray-400 hover:text-primary transition-colors' />
+                </Link>
+              ))}
             </div>
             <div className='flex items-center space-x-2'>
               <Mail className='h-4 w-4 text-red-600' />
@@ -94,7 +98,7 @@ export default function Footer() {
             </div>
             <div className='flex items-center space-x-2'>
               <MapPinHouse className='w-4 h-4 text-primary' />
-              <p className='text-sm  hover:text-primary transition-colors ease-linear duration-300'>
+              <p className='text-sm cursor-pointer  hover:text-primary transition-colors ease-linear duration-300'>
                 ri séjourné Dèlmas 19
               </p>
             </div>

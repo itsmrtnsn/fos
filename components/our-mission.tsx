@@ -9,21 +9,18 @@ export default function OurMission() {
       title: 'Enfòmasyon',
       description: `Tout sa ki gen pou wè avèk pase nou kòm pèp, konsta de tout sa ki bon ak tout sa ki pa bon pou nou kapab planifye yon bon demen.`,
       icon: FileText,
-      //   gradient: 'from-red-500 to-rose-600',
     },
     {
       title: 'Fòmasyon',
       description:
-        'Fòmasyon yo baze sou lagoch ak sistèm ekonomik sosyalis nan fason anperè Jean-Jacques DESSALINES',
+        'Fòmasyon yo baze sou lagoch, istwa, sistèm ekonomik sosyalis epi tout sa ki gen pou wè ak ideyal desalinyen.',
       icon: RotateCw,
-      //   gradient: 'from-red-600 to-red-700',
     },
     {
       title: 'Transfòmasyon',
       description:
         'atravè enfòmasyon ak fòmasyon yo n ap kapab konsyan, aji epi defann enterè Ayiti.',
       icon: Layers,
-      //   gradient: 'from-rose-600 to-red-800',
     },
   ];
 
@@ -62,18 +59,6 @@ export default function OurMission() {
                   </h3>
                   <p className='text-muted-foreground '>{card.description}</p>
                 </div>
-                <motion.div
-                  className='mt-6'
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {/* <Button
-                    variant='outline'
-                    className='shadow-none border-primary hover:bg-primary hover:text-white transition-all duration-300 ease-linear font-normal'
-                  >
-                    Detay
-                  </Button> */}
-                </motion.div>
               </div>
             </motion.div>
           ))}

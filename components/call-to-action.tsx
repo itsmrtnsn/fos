@@ -12,12 +12,12 @@ function CallToAction() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className='text-center'
       >
-        <h3 className='text-3xl lg:text-4xl font-bold mb-4'>
-          Rete Enfòme ak Bilten Nou yo
+        <h3 className='text-3xl  lg:text-4xl font-bold mb-4'>
+          Rete enfòme ak bilten nou yo.
         </h3>
         <p className='mb-6'>
-          Jwenn dènye atik yo ak enfòmasyon yo delivre dirèkteman nan bwat
-          resepsyon imel ou.
+          Jwenn tout atik ak enfòmasyon nou yo dirèkteman nan bwat resepsyon
+          imel ou.
         </p>
         <form className='flex flex-col sm:flex-row justify-center items-center gap-4'>
           <input
