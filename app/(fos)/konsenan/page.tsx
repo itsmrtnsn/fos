@@ -23,10 +23,10 @@ export default function AboutPage() {
                 <h2 className='text-3xl font-bold'>Konsènan FÒS</h2>
               </div>
               <p className='text-base leading-relaxed'>
-                Federasyon òganizasyon sosyalis (FÒS) se yon Federasyon ki
+                federasyon òganizasyon sosyalis (FÒS) se yon federasyon ki
                 regwoupe tout òganizasyon ak endividi ki nan kouran politik
                 lagoch epi ki wè tèt yo nan yon sistèm ekonomik sosyalis.
-                Òganizasyon sila inisye avèk Ken-Rick Fernando, JOSEPH, Bron-son
+                Òganizasyon sila inisye avèk Ken-Rick Fernando JOSEPH, Bron-son
                 PIERRE (Tichapo) epi Samuel JULES (Samy). Li genyen syèj sosyal
                 li, nan ri Séjourné Dèlma 19.
               </p>
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 Transfòmasyon. Nan lide pou l pèmèt tout ayisyen-èn gen bon
                 konpreyansyon sou pase ak prezan pou yo kapab konsyan epi deside
                 pou lavni yo atravè tout sa yo gen pou yo aprann pou yo kapab
-                vini bonjan sitwayen ayisyen ki transfòme.
+                vini bonjan sitwayen ki transfòme.
               </p>
               <p className='text-sm leading-relaxed font-semibold'>
                 FÒS gen pou vizyon, fè yon travay konsyans nan objektif pou nou
