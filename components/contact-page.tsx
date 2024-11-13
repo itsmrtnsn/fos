@@ -99,7 +99,7 @@ export function ContactPageComponent() {
               <h3 className='text-2xl font-bold mb-4 text-red-700'>Orè Biwo</h3>
               <ul className='space-y-2 text-gray-600'>
                 <li>Lendi - Vandredi: 9:00 AM - 5:00 PM</li>
-                <li>Samdi: 10:00 AM - 2:00 PM</li>
+                <li>Samdi: Fèmen</li>
                 <li>Dimanch: Fèmen</li>
               </ul>
             </div>

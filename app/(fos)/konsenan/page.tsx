@@ -53,8 +53,8 @@ export default function AboutPage() {
                 <h2 className='text-3xl font-bold mb-4'>Misyon nou</h2>
                 <p className='leading-relaxed'>
                   Federasyon Òganizasyon Sosyalis se yon mouvman ki angaje pou
-                  transfòmasyon sosyal ak ekonomik Ayiti. Nou travay pou kreye
-                  yon sosyete ki pi jis, ki baze sou prensip egalite ak
+                  transfòmasyon politik, sosyal ak ekonomik Ayiti. N ap travay
+                  pou n kreye yon sosyete ki jis, ki baze sou prensip egalite ak
                   solidarite.
                 </p>
               </CardContent>
@@ -68,7 +68,7 @@ export default function AboutPage() {
                 <h2 className='text-3xl font-bold mb-4'>Vizyon nou</h2>
                 <p className='leading-relaxed'>
                   Nou vize pou kreye yon Ayiti kote tout moun gen menm opòtinite
-                  pou yo reyisi, kote demokrasi a solid, epi kote tout sitwayen
+                  pou yo reyisi, kote demokrasi a solid epi kote tout sitwayen
                   yo ka viv nan diyite.
                 </p>
               </CardContent>
@@ -87,26 +87,29 @@ export default function AboutPage() {
                 'Nou kwè nan pouvwa inite ak sipò mityèl pou kreye chanjman.',
             },
             {
-              title: 'Jistis Sosyal',
+              title: 'Diyite',
               description:
                 'Nou lite pou yon sosyete ki trete tout moun ak respè ak diyite.',
             },
             {
-              title: 'Transparans',
+              title: 'Entegrite',
               description:
                 'Nou kwè nan enpòtans onètete ak responsablite nan tout aksyon nou yo.',
             },
+            { title: 'Transparans', description: 'Transparans' },
+            { title: 'Otodetèminasyon', description: 'Responsablite' },
+            { title: 'Byenèt Kolektif', description: 'Responsablite' },
           ].map((value, index) => (
             <div key={index}>
-              <Card className='p-4 shadow-none transition-shadow duration-300'>
+              <Card className='p-0 border-none shadow-none transition-shadow duration-300'>
                 <CardContent className='space-y-4 p-2'>
                   <div className='flex items-center space-x-2'>
                     <CheckCircle className='text-red-600 w-8 h-8' />
-                    <h3 className='font-semibold text-2xl text-red-700'>
+                    <h3 className='font-semibold text-2xl text-black'>
                       {value.title}
                     </h3>
                   </div>
-                  <p className='text-gray-600'>{value.description}</p>
+                  {/* <p className='text-gray-600'>{value.description}</p> */}
                 </CardContent>
               </Card>
             </div>

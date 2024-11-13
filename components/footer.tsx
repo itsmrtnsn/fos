@@ -2,14 +2,7 @@
 
 import navLinks from '@/lib/nav-links';
 import { cn } from '@/lib/utils';
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPinHouse,
-  Twitter,
-} from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPinHouse, Twitter } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FaLaptopCode } from 'react-icons/fa';
@@ -33,12 +26,12 @@ const socialLinks = [
     icon: Instagram,
     href: 'https://www.instagram.com/federasyonoganizasyonsosyalis',
   },
-  {
-    id: 4,
-    name: 'LinkedIn',
-    icon: Linkedin,
-    href: 'https://www.linkedin.com/share/1Q6mY5p7z3/',
-  },
+  // {
+  //   id: 4,
+  //   name: 'LinkedIn',
+  //   icon: Linkedin,
+  //   href: 'https://www.linkedin.com/share/1Q6mY5p7z3/',
+  // },
 ];
 
 export default function Footer() {
@@ -83,7 +76,7 @@ export default function Footer() {
             <div className='flex space-x-4'>
               {socialLinks.map((link) => (
                 <Link href={link.href} key={link.id}>
-                  <link.icon className='h-6 w-6 text-gray-400 hover:text-primary transition-colors' />
+                  <link.icon className='h-6 w-6 text-primary hover:text-primary transition-colors' />
                 </Link>
               ))}
             </div>
@@ -99,7 +92,7 @@ export default function Footer() {
             <div className='flex items-center space-x-2'>
               <MapPinHouse className='w-4 h-4 text-primary' />
               <p className='text-sm cursor-pointer  hover:text-primary transition-colors ease-linear duration-300'>
-                ri séjourné Dèlmas 19
+                ri Sejourné Dèlma 19
               </p>
             </div>
           </div>

@@ -43,7 +43,7 @@ Federasyon Òganizasyon Sosyalis (FÒS) nou kwè nan lapè ak sekirite, nou kwè
     id: 'JDSKFNEUIWHFUHWEINWCEWH',
     category: 'Politik ak Diplomasi',
     title: 'Kominke pou Laprès',
-    date: 'Port-au-Prince,  10 oktòb 2024',
+    date: 'pòtoprens,  8 oktòb 2024',
     content: `Federasyon Òganizasyon Sosyalis (FÒS), konstate avèk anpil lapenn tray ayisyen-èn ap pase nan lòtbò zile Ayiti a (Repiblik Dominikèn) anba nawè tout Eta manm nasyonzini. 
 
 Li pa nòmal malgre tout jefò ak patisipasyon Ayiti te bay pou te rive mete loni kanpe nan lide pou lapè, libète ak dwa moun te kapab renye epi jounen jodi a yon dirijan nan foli rasis li vle jete byen lwen tout valè ak enterè ki ini nou ansanm.

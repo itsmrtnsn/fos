@@ -46,21 +46,12 @@ export default function ComingSoonModal() {
             <div className='flex items-start justify-between'>
               <CardTitle className='text-xl sm:text-2xl font-bold flex items-center gap-2'>
                 <BookOpen className='w-5 h-5 sm:w-6 sm:h-6' />
-                <span className='leading-tight'>Kou yo ap Vini Byento!</span>
+                <span className='leading-tight'>Kou yo ap vini byento!</span>
               </CardTitle>
-              {/* <Button
-                variant='ghost'
-                size='icon'
-                className='h-6 w-6 rounded-full -mt-1 -mr-2'
-                onClick={() => setOuveDialog(false)}
-              >
-                <X className='h-4 w-4' />
-                <span className='sr-only'>Fèmen</span>
-              </Button> */}
             </div>
             <CardDescription className='text-sm'>
-              N ap travay di pou pote ou kou ekstraòdinè. Se ou k ap premye
-              konnen lè yo disponib!
+              Kou pou fomasyon yo ap disponib byento. Enskri kounye a pou ou ka
+              jwenn notikasyon lè kou yo disponib.
             </CardDescription>
           </CardHeader>
           <CardContent className='p-4 sm:p-6'>
