@@ -27,11 +27,9 @@ export default async function RootLayout({
           )}
         >
           <ThemeProvider attribute='class' defaultTheme='light'>
-            <div>
-              <NavBar />
-            </div>
+            <div>{/* <NavBar /> */}</div>
             <main className='pt-16 lg:pt-16'> {children}</main>
-            <Footer />
+            {/* <Footer /> */}
           </ThemeProvider>
         </body>
       </html>
